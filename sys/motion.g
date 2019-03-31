@@ -20,8 +20,8 @@ M906 X1000 Y1000 Z1000 E800:800 I30	    ; Set motor currents (mA)
 M84 S60                                 ; Set idle timeout
 
 ; Axis Limits
-M208 X0 Y0 Z0 S1                        ; Set axis minima
-M208 X230 Y230 Z250 S0                  ; Set axis maxima
+M208 X0 Y-20 Z0 S1                        ; Set axis minima
+M208 X230 Y270 Z250 S0                  ; Set axis maxima
 
 ; Endstops
 M574 X1 Y1 Z1 S1                        ; Set active High Endstops
