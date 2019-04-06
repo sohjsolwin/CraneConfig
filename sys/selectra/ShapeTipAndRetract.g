@@ -1,5 +1,7 @@
 
 
+
+M291 P"Shaping filament tip" R"Tool Change" S0  T2
 ;/// Move nozzle to safe zone & start pump \\\
 G91                             ; Releative Movement
 ;G1 Z1.5 E-([init_retract]+[extra_retract]) F9000	;Lift nozzle and retract

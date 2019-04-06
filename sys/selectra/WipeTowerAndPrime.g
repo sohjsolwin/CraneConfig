@@ -1,4 +1,6 @@
 
+
+M291 P"Performing purge" R"Tool Change" S0  T2
 G91                          ;Set to Relative
 
 ; --- Wipe Tower
