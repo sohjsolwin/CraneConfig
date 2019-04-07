@@ -13,3 +13,6 @@ M98 Ptools.g                     ; Call Toolhead Module
 
 ; Call QC start up
 ;M98 Pqc.g
+
+
+M291 P"Let's get printing, Josh" R"Starting Up" S2
