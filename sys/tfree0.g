@@ -15,7 +15,8 @@ M567 P0 E1.0:0.0                  ; Set mix ratio to 100% Selector
 
 G90                               ;Absolute mode based on entire Selectra range
 
-M291 P"Returning to Channel 3/T2" R"Tool Change" S0  T2
+M291 P"Moving to Channel 3/T2" R"Tool Change" S0  T2
+G92 E0
 ;// Position ID \\
 G1 E20 F300 	;Starting condition is ALWAYS T2 (Return to center on TFree)
 

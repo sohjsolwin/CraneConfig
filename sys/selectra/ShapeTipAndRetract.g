@@ -25,10 +25,15 @@ G91                             ;Relative mode
 ;// Pull into splitter \\
 G92 E0                          ;Zero E
 ;G1 X20 E[splitter_retract] F280 ;;;;;;;;;;MUST BE LOW F 
-G1 X20 E100  F280               ;;;;;;;;;;MUST BE LOW F 
+;Below must total to Splitter Retract distance (985)
+G1 E-100 F280                   ; Pull back a small amount slowly. 
+G1 X20 E-700 F900                ;Initial large distance pull back. 
+G1 E-185 F280                ;;;;;;;;;;MUST BE LOW F
+;
+
+
 G92 E0                          ; Zero E
 M84 E                           ; Stop Idle Hold
 ;G-Sum -([init_retract]+[splitter_retract]+[extra_retract])	;Filament distance from nozzle tip at this point
-; G-Sum -162.5
 
 ; Final position: X:45 Y:ooze Z:start

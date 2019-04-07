@@ -20,7 +20,7 @@ M567 P4 E1.0:0.0                  ; Set mix ratio to 100% Selector
 
 G90                               ;Absolute mode based on entire Selectra range
 ;// New position move \\
-G1 E40 F2000
+G1 E40 F300
 
 ;// Position Label \\
 M291 P"Selectra Channel 5 selected" R"Tool Change" S0  T2

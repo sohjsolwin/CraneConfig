@@ -38,7 +38,7 @@ G10 P4 S0
 
 M140 S0 ; Set bed temperature to 0
 
-M291 P"Set Selectra for Channel 3" R"Selectra Position" S2
+M291 P"Adjust to Channel 3" R"Selectra Position" S2
 
 T0 ; Select tool 0 (will run tfree0 -> tpre0 -> tpost0)
 

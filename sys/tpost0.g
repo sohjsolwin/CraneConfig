@@ -10,7 +10,7 @@ M116 P0
 
 ; //Init_Retract = 60
 ; //Extra_Retract = 2.5
-; //Splitter_Retract = 100
+; //Splitter_Retract = 985
 
 ; Tip shaping occurs in TFree
 
