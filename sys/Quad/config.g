@@ -13,3 +13,8 @@ M98 Ptools.g                     ; Call Toolhead Module
 
 ; Call QC start up
 ;M98 Pqc.g
+
+
+
+
+M291 P"Quad Loaded" R"Printer Mode" S0 T2

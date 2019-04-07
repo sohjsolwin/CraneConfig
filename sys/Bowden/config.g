@@ -15,4 +15,4 @@ M98 Ptools.g                     ; Call Toolhead Module
 ;M98 Pqc.g
 
 
-M291 P"Let's get printing, Josh" R"Starting Up" S2
+M291 P"Bowden Loaded" R"Printer Mode" S0 T2
