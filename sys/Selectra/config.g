@@ -16,4 +16,4 @@ M98 Ptools.g                     ; Call Toolhead Module
 
 
 
-M291 P"Selectra Loaded" R"Printer Mode" S0 T2
+M291 P"Selectra Loaded" R"Printer Mode" S2
