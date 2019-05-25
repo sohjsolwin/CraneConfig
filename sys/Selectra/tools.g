@@ -46,3 +46,5 @@ T0 ; Select tool 0 (will run tfree0 -> tpre0 -> tpost0)
 ;M563 P70 D0 H1 ; Define tool 70
 ;G10 P70 X0 Y0 Z0 ; Set tool axis offsets
 ;G10 P70 R0 S230 ; Set initial active (230C) and standby (off) temperatures
+
+M404 N1.75 D0.4 ; Set Filament Diameter and Nozzle

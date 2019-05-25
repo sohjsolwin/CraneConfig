@@ -12,3 +12,5 @@ G10 P0 S0
 
 M140 S0
 T0
+
+M404 N1.75 D0.35 ; Set Filament Diameter and Nozzle

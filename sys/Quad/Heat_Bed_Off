@@ -1,2 +1,1 @@
-;Turns off the heat bed.
-M140 S0
+M98 P"../Common/Heat_Bed_Off"

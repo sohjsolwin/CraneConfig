@@ -1,3 +1,1 @@
-; Turns off both the hotend and heatbed heaters.
-M98 PHeat_Hotend_Off
-M98 PHeat_Bed_Off
+M98 P"../Common/Heat_All_Off"
