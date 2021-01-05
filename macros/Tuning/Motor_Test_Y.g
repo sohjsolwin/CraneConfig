@@ -1,5 +1,4 @@
-; Crane Motor Test -- Test Y Axis
-; Print M3D
+; Motor Test -- Test Y Axis
 G91                                     	; Relative Positioning(toolhead)
 M564 H0									; Allow movement without homing.
 M302 P1                                   	; Allow Cold Extrusion

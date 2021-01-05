@@ -1,8 +1,6 @@
 ; homex.g
 ; called to home the X axis
 ;
-; Created by PrintM3D
-; for the Crane Quad
 
 G91               ; relative positioning
 G1 Z5 F600 S2     ; lift Z prior to X Move.

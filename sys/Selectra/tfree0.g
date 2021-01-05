@@ -8,7 +8,7 @@
 M291 P"Freeing Tool 0" R"Tool Change" S0  T2
 M567 P0 E0.0:1.0                ; Set mix ratio to 100% Driver
 G92 E0                          ;Zero E
-M98 P0:/sys/Selectra/ShapeTipAndRetract.g    ; Call Shape Tip Module
+M98 P"0:/sys/Selectra/ToolChanges/ShapeTipAndRetract.g"    ; Call Shape Tip Module
 ; Position After: X:45 Y:ooze Z:start
 
 M567 P0 E1.0:0.0                  ; Set mix ratio to 100% Selector

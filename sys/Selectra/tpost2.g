@@ -34,7 +34,7 @@ M300 S440 P200
 
 M567 P2 E0.0:1.0                ; Set mix ratio to 100% driver
 
-M98 P0:/sys/Selectra/Reload.g
+M98 P"0:/sys/Selectra/ToolChanges/Reload.g"
 
 ;;;;;;;;TC END AND PRIME START ;;;;;;;;
 
@@ -43,7 +43,7 @@ G90                             ; Absolute Movement
 G92 E0                          ; Zero E
 
 G1 X14 Y214.2                     ; Get in position for wipe tower.
-M98 P0:/sys/Selectra/WipeTowerAndPrime.g
+M98 P"0:/sys/Selectra/ToolChanges/WipeTowerAndPrime.g"
 
 G90                             ; Absolute
 G92 E0                          ; Zero E

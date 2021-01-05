@@ -1,6 +1,4 @@
 ; motion.g
-; Created by sohjsolwin
-; For the Crane Selectra.
 
 ; Drives
 M569 P0 S1 D3 V0                        ; Drive 0 goes backwards

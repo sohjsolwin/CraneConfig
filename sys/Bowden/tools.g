@@ -1,7 +1,5 @@
 ; tools.g
 ; Creates initial tool setup.
-; Created by sohjsolwin
-; for the Crane Selectra
 ;
 
 ; Tools

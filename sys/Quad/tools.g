@@ -1,7 +1,5 @@
 ; tools.g
 ; Creates initial tool setup.
-; Created by PrintM3D
-; for the Crane Quad
 ;
 
 ; Tools

@@ -1,16 +1,11 @@
-; Configuration file for Duet Maestro (firmware version 2.02RC2 or newer)
+; Configuration file for Duet (firmware version 2.02RC2 or newer)
 ; executed by the firmware on start-up
-; Created by PrintM3D
-; For Crane Quad
 ;
 ; startup!
 
-M98 Pmotion.g                    ; Call Kinematics/Motor Module
-M98 Pthermal.g                   ; Call Heater/Fan/Sensing Module
-M98 Ptools.g                     ; Call Toolhead Module
-
-; Call QC start up
-;M98 Pqc.g
+M98 P"motion.g"                    ; Call Kinematics/Motor Module
+M98 P"thermal.g"                   ; Call Heater/Fan/Sensing Module
+M98 P"tools.g"                     ; Call Toolhead Module
 
 
-M291 P"Bowden Loaded" R"Printer Mode" S2
+M291 P"Bowden Loaded" R"Printer Mode" S1 T10

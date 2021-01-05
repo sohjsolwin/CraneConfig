@@ -10,4 +10,4 @@ M505 P"Bowden"          ; Sets config directory to 0:\sys\Bowden
 M98 P"config.g"
 
 
-M291 P"Let's get printing, Josh" R"Boot Complete" S2
+M291 P"Let's get printing, Josh" R"Boot Complete" S0 T5
