@@ -1,8 +1,14 @@
 ; homeall.g
-; Called to Home All Axes
+; called to home all axes
 ;
 
-M98 P"homex.g"
-M98 P"homey.g"
-M98 P"homez.g"
+; Front left corner is (0,0)
 
+; ============ HOME X & HOME Y ==============
+
+M98 Phomex.g ; Run the homex.g file, also homes the Y axis
+
+; ============ HOME Z ==============
+
+M98 Phomez.g ; Run the homez.g file
+G29 S1 ; Enable mesh compensation
