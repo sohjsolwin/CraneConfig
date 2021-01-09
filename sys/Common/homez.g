@@ -1,17 +1,58 @@
 ; homez.g
 ; called to home the Z axis
 ;
-G91              ; relative positioning
-G1 Z5 F1200 S2   ; lift Z relative to current position
-G90              ; absolute positioning
-G1 X15 Y15 F3600 ; go to first probe point
-; G30              ; home Z by probing the bed
-G1 Z-450 F1200 S1
-G1 Z5 F600 S2
-G1 Z-450 F120 S1
 
-; Uncomment the following lines to lift Z after probing
-G91             ; relative positioning
-G1 Z5 F120 S2   ; lift Z relative to current position
-G90             ; absolute positioning
+; ============= PRE-HOMING =====================
+M913 Z60 ; drop Z motor currents to 60%
 
+; Relative positioning
+G91
+; Provide Z height clearance
+G0 Z-10 F250 S1
+; Absolute positioning
+G90
+
+; Ignore Machine boundaries
+M564 H0 S0
+
+; Turn off bed leveling during homing
+G29 S2 ; Does the same as M561!
+G29 S2 ; Do it twice because once just isn't enough
+
+; Switch to Origin Tool
+T0
+
+; Relative positioning
+G91
+
+; Provide Z height clearance
+G0 Z10 F250 S1
+
+
+; ============ HOME Z ==============
+
+; Rapid Z until limit switch triggers
+G0 Z450 F1500 S1
+
+; Back off to release limit switch
+G0 Z-10 F500
+
+; Slow advance to trigger limit switch
+G0 Z20 F120 S1
+
+M98 P"../Common/machine_zendstop.g" ; Set Z Endstop height
+
+; ============ Post-Homing ==============
+
+; Revert to absolute coordinates
+G90
+
+; Re-enable mesh leveling
+G29 S1
+
+M913 Z100 ; Z motor currents to 100%
+
+M98 P"../Common/machine_axisdimension.g" ; Set Axes Limits
+
+; Stop movement across limits, enable boundaries, homing requirement
+M564 H1 S1

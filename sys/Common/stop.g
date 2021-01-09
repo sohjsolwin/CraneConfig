@@ -11,10 +11,10 @@ G1 E-1 F3600       ; retract 1mm of filament
 G91                ; relative positioning
 M220 S100		       ; Reset Speed Factor to 100%
 M221 S100		       ; Reset Extrusion Factor to 100%
-G1 Z5 S1 F360      ; lower Z by 5mm, or until Z-limit is reached
+G1 Z10 S1 F360     ; lower Z by 10mm, or until Z-limit is reached
 G90                ; absolute positioning
 G1 X350 Y350 F3000 ; go to X=350 Y=350 to move head out of the way (usually)
-M98 P"homez.g"     ; move Z to the bottom
+M98 P"../Common/homez.g"     ; move Z to the bottom
 
 ; Turn off systems
 G10 P0 S0 R0 ; turn off hotend

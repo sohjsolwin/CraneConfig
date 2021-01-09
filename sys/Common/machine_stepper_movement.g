@@ -49,4 +49,4 @@ M84 S1 ; Set idle timeout
 
 ; ---------- SECTION ----------
 ; Since this is called in other places as well, the information is in its own file.
-M98 P"machine_axisdimension.g" ; Set Axes Limits
+M98 P"../Common/machine_axisdimension.g" ; Set Axes Limits

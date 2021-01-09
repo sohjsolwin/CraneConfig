@@ -70,7 +70,7 @@ G90
 M913 X100					; X motor currents back to 100%
 M913 Y100					; Y motor currents back to 100%
 
-M98 P"machine_axisdimension.g" ; Set Axes Limits
+M98 P"../Common/machine_axisdimension.g" ; Set Axes Limits
 
 ; Stop movement across limits, enable boundaries, homing requirement
 M564 H1 S1
