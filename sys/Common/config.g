@@ -13,7 +13,7 @@ M98 P"machine_powerloss.g"                 ; Call Power Loss Module
 
 M98 P"machine_zendstop.g"                  ; Call Z Endstop Module
 
-; Home initial Z
+; Power On Initial Z Home
 M564 H0 S0 ; Disable Boundaries
 G91 ; Set Relative
 G0 Z-30 F100
