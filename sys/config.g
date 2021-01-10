@@ -12,6 +12,6 @@ G90 ; Set to absolute coordinates...
 M84 S1 ; Set idle timeout
 
 ; Load From Memory
-M501                           ; Load saved parameters from non-volatile memory
+M501                    ; Load saved parameters from non-volatile memory
 
 M291 P"Let's get printing" R"Boot Complete" S0 T5
