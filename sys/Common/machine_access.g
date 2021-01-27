@@ -17,4 +17,4 @@ M586 P2 S0                     ; Disable Telnet
 
 ;M552 S1 P192.168.86.107  ; Set IP address and enable networking
 ;M552 P0.0.0.0 S1         ; Set IP address and enable networking
-M552 P0.0.0.0 S1 ; Set IP address and enable wifi networking
+M552 S1 ; Set IP address and enable wifi networking
