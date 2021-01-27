@@ -40,7 +40,7 @@ G0 Z-10 F500
 ; Slow advance to trigger limit switch
 G0 Z20 F120 S1
 
-M98 P"../Common/machine_zendstop.g" ; Set Z Endstop height
+M98 P"0:/sys/Common/machine_zendstop.g" ; Set Z Endstop height
 
 ; ============ Post-Homing ==============
 
@@ -52,7 +52,7 @@ G29 S1
 
 M913 Z100 ; Z motor currents to 100%
 
-M98 P"../Common/machine_axisdimension.g" ; Set Axes Limits
+M98 P"0:/sys/Common/machine_axisdimension.g" ; Set Axes Limits
 
 ; Stop movement across limits, enable boundaries, homing requirement
 M564 H1 S1
