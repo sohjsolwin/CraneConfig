@@ -65,7 +65,7 @@ G0 X5 F1500
 G90
 
 ; Re-enable mesh leveling
-;G29 S1
+;G29 S1 P"0:/sys/heightmap.csv"
 
 M913 X100					; X motor currents back to 100%
 M913 Y100					; Y motor currents back to 100%

@@ -18,4 +18,4 @@ M376 H5 ; Define height(mm) over which to taper off heightmap compensation
 
 
 
-G29 S1 ; Load heightmap after power cycle
+G29 S1 P"0:/sys/heightmap.csv" ; Load heightmap after power cycle

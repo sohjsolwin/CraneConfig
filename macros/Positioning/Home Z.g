@@ -1,1 +1,1 @@
-M98 P"homez.g"
+M98 P"0:/sys/Common/homez.g"

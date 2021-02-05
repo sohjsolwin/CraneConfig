@@ -8,7 +8,7 @@ M913 Z60 ; drop Z motor currents to 60%
 ; Relative positioning
 G91
 ; Provide Z height clearance
-G0 Z-10 F250 S1
+G0 Z-5 F250 S1
 ; Absolute positioning
 G90
 
@@ -26,7 +26,7 @@ T0
 G91
 
 ; Provide Z height clearance
-G0 Z10 F250 S1
+G0 Z5 F250 S1
 
 
 ; ============ HOME Z ==============
@@ -35,7 +35,7 @@ G0 Z10 F250 S1
 G0 Z450 F1500 S1
 
 ; Back off to release limit switch
-G0 Z-10 F500
+G0 Z-5 F500
 
 ; Slow advance to trigger limit switch
 G0 Z20 F120 S1
@@ -48,7 +48,7 @@ M98 P"0:/sys/Common/machine_zendstop.g" ; Set Z Endstop height
 G90
 
 ; Re-enable mesh leveling
-G29 S1
+G29 S1 P"0:/sys/heightmap.csv"
 
 M913 Z100 ; Z motor currents to 100%
 
