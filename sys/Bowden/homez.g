@@ -1,4 +1,4 @@
 ; homez.g
 ; called to home the Z axis
 ;
-M98 P"../Common/homez.g"
+M98 P"0:/sys/Common/homez.g"

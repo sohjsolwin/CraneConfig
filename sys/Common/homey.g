@@ -5,4 +5,4 @@
 ; Same as homex.g because of coreXY
 ; Front left is (0,0)
 
-M98 P"../Common/homex.g"
+M98 P"0:/sys/Common/homex.g"

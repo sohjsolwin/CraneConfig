@@ -1,1 +1,1 @@
-M98 P"../Common/Heat_Hotend_Off.g"
+M98 P"0:/sys/Common/Heat_Hotend_Off.g"

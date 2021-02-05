@@ -1,4 +1,4 @@
 ; stop.g
 ; called when M0 (Stop) is run (e.g. when a print from SD card is cancelled)
 ;
-M98 P"../Common/stop.g"
+M98 P"0:/sys/Common/stop.g"

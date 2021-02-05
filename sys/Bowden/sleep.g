@@ -2,4 +2,4 @@
 ; called when M1 (Sleep) is being processed
 
 
-M98 P"../Common/sleep.g"
+M98 P"0:/sys/Common/sleep.g"
