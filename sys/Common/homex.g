@@ -23,18 +23,18 @@ T0
 G91
 
 ; Provide Z height clearance
-G1 Z10 F750 S1
+G1 Z10 F750 H1
 
 ; ================== HOME Y ============================
 
 ; Rapid Y until limit switch triggers
-G0 Y450 F1500 S1
+G0 Y450 F1500 H1
 
 ; Back off to release limit switch
 G0 Y-6 F1500
 
 ; Slow advance to trigger limit switch
-G0 Y10 F120 S1
+G0 Y10 F120 H1
 
 ; Set this location as Y = 341mm
 G92 Y341
@@ -45,13 +45,13 @@ G0 Y-2 F1200
 ; ============= HOME X ====================
 
 ; Rapid X until limit switch triggers
-G0 X-450 F1500 S1
+G0 X-450 F1500 H1
 
 ; Back off to release limit switch
 G0 X6 F1500
 
 ; Slow advance to trigger limit switch
-G0 X-10 F120 S1
+G0 X-10 F120 H1
 
 ; Set this location as X = 0mm
 G92 X0

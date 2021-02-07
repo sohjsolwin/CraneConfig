@@ -8,10 +8,12 @@
 ; H1 is main hot end
 ; H2 is additional hot end
 
+M308 S1 P"e0temp" Y"thermistor" T100000 B4725 C7.06e-8 R4700 ; Define Extruder Thermistor
+M950 H1 C"e0heat" T1 ; heater 1 uses the e0heat pin and sensor 1
+
 M570 H1 P15 T30                                 ; Allow heater to be off by as much as 30C for 15 seconds
-M305 P1 S"Extruder_Temp" T100000 B4725 C7.06e-8 R4700 ; Configure the Thermistor
-;M307 H1 A480.6 C261.3 D3.8 S1.00 V23.9 B0       ; Set PID values use M303 auto-tune calibration settings
-M307 H1 A389.1 C205.7 D3.1 S1.00 V24.1 B0
+
+M307 H1 A389.1 C205.7 D3.1 S1.00 V24.1 B0       ; ADC Correction
 M302 P1                                         ; Allow Cold extrudes
 
 

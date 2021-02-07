@@ -4,11 +4,14 @@
 
 ; ---------- SECTION ----------
 ; This section sets the thermistor behavior for the bed.
+M308 S0 P"bed_temp" Y"thermistor" T100000 B4138 C0 R4700 ; Set thermistor + ADC parameters for heater 0, For heated bed thermistor WiFi.
+M950 H0 C"bed_heat" T0 ; Heater 0 uses the bed_heat pin, sensor 0
+
 M570 H0 P25 T30                           ; Allow heater to be off by as much as 30C for 25 seconds
-; M305 P0 T100000 B4138 C0 R2200            ; Set thermistor + ADC parameters for heater 0, For heated Bed thermistor Maestro.
-M305 P0 T100000 B4138 C0 R4700            ; Set thermistor + ADC parameters for heater 0, For heated Bed thermistor WiFi.
-;M307 H0 A78.9 C265.2 D9.5 S1.00 V24.0 B0  ; Forcing heated bed PID control after power-cycle. Basic bed heating auto-tune
-M307 H0 A65.2 C287.7 D6.1 S1.00 V24 B0
+
+M140 P0 H0 ; Set heated bed 0 to use heater 0
+
+M307 H0 A65.2 C287.7 D6.1 S1.00 V24 B0 ; ADC Correction
 
 
 ; ---------- SECTION ----------
