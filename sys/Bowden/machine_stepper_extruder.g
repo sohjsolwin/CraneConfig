@@ -2,10 +2,12 @@
 ; December 16, 2019
 ; This file is used to configure all the values for the extruder steppers, like direction, steps / mm and power.
 
+M584 E3:4
+
 ; ---------- SECTION ----------
 ; Configure the direction each stepper turns.
-M569 P3 S1 D2 ; Drive 3, Main Extruder
-
+M569 P3 S0 D2 ; Drive 3, Main Extruder
+M569 P4 S0 D2 ; Drive 4, 2nd Extruder
 
 ; ---------- SECTION ----------
 ; This section allows you to calibrate the extruder steps.
@@ -14,8 +16,8 @@ M569 P3 S1 D2 ; Drive 3, Main Extruder
 ; http://print.theporto.com/posts/how-to-calibrate-your-3d-printer-extruder-steps/
 
 ; If you need to configure more than one extruder, add a colon behind each value and add the value for the second extruder
-M92 E409    ; Extruder Steps/mm
-M350 E16 I1 ; Setting microstepping to 16 with interpolation.
+M92 E409:409    ; Extruder Steps/mm
+M350 E16:16 I1 ; Setting microstepping to 16 with interpolation.
 
 
 ; ---------- SECTION ----------
@@ -23,7 +25,7 @@ M350 E16 I1 ; Setting microstepping to 16 with interpolation.
 ; This is an advanced feature and should only be changed if you REALLY know what you're doing!
 ; Increasing stepper motor currents beyond their limit can result in damage to them!
 ; This only sets the currents for the extruder stepper, change the current for the motion steppers in machine_stepper_movement.g
-M906 E900 I60 ; Set motor currents (mA) and idle current percentage
+M906 E900:900 I60 ; Set motor currents (mA) and idle current percentage
 
 
 ; ---------- SECTION ----------
@@ -35,9 +37,9 @@ M906 E900 I60 ; Set motor currents (mA) and idle current percentage
 ; These are advanced feature values and should only be changed for good reason and if you know how they impact prints.
 
 ; If you need to configure more than one extruder, add a colon behind each value and add the value for the second extruder
-M203 E3600 ; Set maximum linear speeds (mm/min)
-M201 E1500 ; Set accelerations (mm/s^2)
-M566 E3600 ; Set maximum instantaneous/jerk speed changes (mm/min)
+M203 E3600:3600 ; Set maximum linear speeds (mm/min)
+M201 E1500:1500 ; Set accelerations (mm/s^2)
+M566 E3600:3600 ; Set maximum instantaneous/jerk speed changes (mm/min)
 
 
 ; ---------- SECTION ----------

@@ -28,16 +28,16 @@ G1 Z10 F750 H1
 ; ================== HOME Y ============================
 
 ; Rapid Y until limit switch triggers
-G0 Y450 F1500 H1
+G0 Y450 F6000 H1
 
 ; Back off to release limit switch
-G0 Y-6 F1500
+G0 Y-6 F6000
 
 ; Slow advance to trigger limit switch
 G0 Y10 F120 H1
 
 ; Set this location as Y = 350mm
-G92 Y350
+G92 Y420
 
 ; Move the gantry slightly away from back of printer, to allow travel past the bolt mounting the gantry bracket
 ;G0 Y0 F1200
@@ -45,16 +45,16 @@ G92 Y350
 ; ============= HOME X ====================
 
 ; Rapid X until limit switch triggers
-G0 X450 F1500 H1
+G0 X450 F6000 H1
 
 ; Back off to release limit switch
-G0 X-6 F1500
+G0 X-6 F6000
 
 ; Slow advance to trigger limit switch
 G0 X10 F120 H1
 
 ; Set this location as X = 0mm
-G92 X350
+G92 X440
 
 ; Move away from the limit switch, to prevent damage to it upon next move
 G0 X-5 F1500

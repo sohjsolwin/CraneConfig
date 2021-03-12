@@ -8,4 +8,4 @@
 ; if the Z end stop was 377.2, max Z needs to be 378 etc.
 
 M208 X0 Y0 Z-0.5 S1    ; Set axis minima
-M208 X350 Y350 Z373 S0 ; Set axis maxima, 388 is the theoretical maxima for all axis
+M208 X440 Y420 Z373 S0 ; Set axis maxima, 388 is the theoretical maxima for all axis

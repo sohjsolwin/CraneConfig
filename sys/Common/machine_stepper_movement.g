@@ -1,3 +1,5 @@
+M584 X0 Y1 Z2
+
 ; ---------- SECTION ----------
 ; Set the mode and XYZ scaling.  X and Z are usually 1.0, Y is calculated based of your calibration method
 M669 K1             ; Select CoreXY kinematics (RRF 2.03 and later)

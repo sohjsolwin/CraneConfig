@@ -41,4 +41,4 @@ M558 P9 C"^zprobe.in" H5 F120 T6000                ; set Z probe type to bltouch
 ; G31 P999 X0 Y-43 Z3.13  ; Set Z probe (Metrol switch) trigger value, offset
 ; G31 P999 X-43 Y25 Z0.925 ; Set Z probe (limit switch) trigger value, offset
 ; G31 P999 X0 Y0 Z-0.5 K0 ; Set Z probe (manual) trigger value, offset
-G31 P500 X0 Y-38 Z2.5      ; set Z probe trigger value, offset and trigger height
+G31 P500 X0 Y-38 Z2.79      ; set Z probe trigger value, offset and trigger height

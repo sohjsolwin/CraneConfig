@@ -7,6 +7,10 @@ M563 P0 D0 H1 F0 S"Main Extruder" ; Define main tool
 G10 P0 X0 Y0 Z0                   ; Set axis offsets
 G10 P0 R0 S0                      ; Set active (S0) & standby temp (R0) at 0.
 
+M563 P1 D1 H1 F0 S"2nd Extruder" ; Define 2nd tool
+G10 P1 X0 Y0 Z0                   ; Set axis offsets
+G10 P1 R0 S0                      ; Set active (S0) & standby temp (R0) at 0.
+
 T0 ; Select tool 0 (will run tfree0 -> tpre0 -> tpost0)
 
 ;Example
